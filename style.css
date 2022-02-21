@@ -117,9 +117,7 @@ p {
 /* End of Hero Section  */
 
 /* Hobbies Section */
-#hobbies {
-    
-}
+
 #hobbies .hobbies {
     flex-direction: column;
     text-align: center;
@@ -127,7 +125,7 @@ p {
     margin: 0 auto;
     padding: 100px 0;
 }
-#hobbies .section-title {
+.section-title {
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -136,7 +134,7 @@ p {
     letter-spacing: .2rem;
     text-align: center;
 }
-#hobbies .section-title span {
+.section-title span {
     color: rgb(0, 26, 255);
     opacity: .4;
 }
@@ -159,10 +157,10 @@ p {
     background-image: url();
     background-size: cover;
     margin: 10px 5%;
-    border-color: black;
-    border: solid 2px;
+    border-radius: 15px;
     position: relative;
-    z-index:
+    z-index: 1;
+    overflow: hidden;
 }
 #hobbies .hobbies-item::after{
     content: '';
@@ -188,10 +186,55 @@ p {
 }
 #hobbies .hobbies-item p {
     text-align: left;
+    font-size: 1.5rem;
 }
 
 /* End of Hobbies Section  */
 
+/* Project Section  */
+
+#projects .projects {
+    flex-direction:column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 26, 255, 0.2);
+}
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* End of Project Section  */
 
 /* Key Frames */
 @keyframes text_reveal_box {
