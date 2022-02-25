@@ -33,7 +33,16 @@ p {
         font-weight: 300;
         letter-spacing: .05rem;
     }
-    
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand span {
+    color: #ccd1ff;
+}
+
 /* Hero Section */
 #hero {
     background-image: url(/Images/Panigale\ Final\ Edit\ Lower\ Quality.jpg);
@@ -161,6 +170,7 @@ p {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    height: 248.75px;
 }
 #hobbies .hobbies-item::after{
     content: '';
@@ -322,6 +332,94 @@ p {
 }
 /* End of About Section  */
 
+/* Contact Section  */
+
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact .contact-items {
+    width: 400px;
+}
+#contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0px rgb(131, 131, 131);
+    transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0px rgb(131, 131, 131);
+}
+
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/* End of Contact Section  */
+
+/* Footer  */
+
+#footer {
+    background-image: linear-gradient(#ccd1ff 0%, #29323c 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column; 
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0 5px;
+}
+#footer .social-item img {
+    filter: grayscale(1);
+    transition: .3 ease filter;
+}
+#footer .social-item:hover img {
+    filter: grayscale(0);
+}
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* End of Footer  */
+
 /* Key Frames */
 @keyframes text_reveal_box {
     50% {
@@ -346,3 +444,63 @@ p {
     }
 }
 /* End Key Frames */
+
+/* Media Query For Tablet */
+@media screen and (min-width: 768px){
+    #hero .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title {
+        font-size: 7rem;
+    }
+
+/* Hero */
+#hero h1 {
+    font-size: 6rem;
+}
+/* End Hero */
+
+/* Hobbies */
+#hobbies .hobbies-bottom .hobbies-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+}
+/* End Hobbies */
+
+/* Project */
+#projects .project-item {
+    flex-direction: row;
+}
+#projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+#projects .all-projects .project-info {
+    height: 100%;
+}
+#projects .all-projects .project-img {
+    height: 100%
+}
+/* End of Project */
+
+/* About */
+
+
+
+/* End of About */
+
+
+
+}
+
+
+
+
+/* End ofMedia Query For Tablet */
